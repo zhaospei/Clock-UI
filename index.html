@@ -1,0 +1,76 @@
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++-->
+<!-- Sao toàn vào xem Source Code thế lmao =)) -->
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOXICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Clock UI</title>
+</head>
+<body>
+    <section class="clock container">
+        <div class="clock__container grid">
+            <div class="clock__content grid">
+                <div class="clock__circle">
+                    <span class="clock__twelve"></span>
+                    <span class="clock__three"></span>
+                    <span class="clock__six"></span>
+                    <span class="clock__nine"></span>
+
+                    <div class="clock__rounder"></div>
+                    <div class="clock__hour" id="clock-hour"></div>
+                    <div class="clock__min" id="clock-min"></div>
+                    <div class="clock__sec" id="clock-sec"></div>
+                    <div class="clock__theme buttonn">
+                        <i class="bx bxs-moon" id="theme-button"></i>
+                    </div>
+                        <div class="clock__color buttonn" id="change-color">
+                            <i class="bx bxs-color-fill" id="theme-button"></i>
+                        </div>
+                        <div class="color__choose" id="clchoose">
+                            <span id="color1">
+                                <i class='bx bxs-circle'></i>
+                            </span>
+                            <span id="color2">
+                                <i class='bx bxs-circle'></i>
+                            </span>
+                            <span id="color3">
+                                <i class='bx bxs-circle'></i>
+                            </span>
+                            <span id="color4">
+                                <i class='bx bxs-circle'></i>
+                            </span>
+                        </div>
+                </div>
+            </div>
+
+            <div class="clock__text">
+                <div class="clock__text-hour" id="text-hour"></div>
+                <div class="clock__text-min" id="text-min"></div>
+                <div class="clock__text-ampm" id="text-ampm"></div>
+            </div>
+
+            <div class="clock__date">
+                <span id="date-day"></span>
+                <span id="date-month"></span>
+                <span id="date-year"></span>
+            </div>
+            <a href="https://github.com/taekinotaking" target="_blank" class="clock__logo"> 
+                <i class='bx bxl-github bxa'></i>
+                taekinotaking </br>
+                <p style="text-align: center; font-weight: 300;"> Ver 1.0.1 </p>
+            </a>
+            
+        </div>
+    </section>
+    <p id="check">dasdas</p>
+    <!-- MAIN JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
