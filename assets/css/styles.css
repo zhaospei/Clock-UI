@@ -239,7 +239,7 @@ a{
 
 .buttonn{
     display: flex;
-    padding: .25rem;
+    padding:  .25rem;
     border-radius: 50%;
     box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
                 inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
@@ -284,20 +284,20 @@ body.dark-theme{
     right: -4rem;
 }
 
+.theme-button1{
+    position: absolute;
+}
+
 .color__choose{
-    height: 120px;
     position: absolute;
     top: 1rem;
     right: -4rem;
-    display: none;
     padding: .25rem;
     border-radius: 30px;
     box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
                 inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
     color: var(--first-color);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    display: none;
 }
 .dark-theme .color__choose{
     box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
@@ -325,5 +325,4 @@ body.dark-theme{
 }
 .sub-text{
     justify-self: center;
-    color: #ccc
 }

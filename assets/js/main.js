@@ -83,27 +83,43 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-    document.getElementById("color1").addEventListener("click",
-    function myFunction() {
-        const rootStyle = document.documentElement.style;
-        rootStyle.setProperty('--hue-color', 240);
-    
-    })
-    document.getElementById("color2").addEventListener("click",
-    function myFunction() {
-        const rootStyle = document.documentElement.style;
-        rootStyle.setProperty('--hue-color', 154);
-    
-    })
-    document.getElementById("color3").addEventListener("click",
-    function myFunction() {
-        const rootStyle = document.documentElement.style;
-        rootStyle.setProperty('--hue-color', 312);
-    
-    })
-    document.getElementById("color4").addEventListener("click",
-    function myFunction() {
-        const rootStyle = document.documentElement.style;
-        rootStyle.setProperty('--hue-color', 45);
-    
-    });
+
+document.getElementById("color1").addEventListener("click",
+function myFunction() {
+    const rootStyle = document.documentElement.style;
+    rootStyle.setProperty('--hue-color', 240);
+    document.getElementById("clchoose").style.display = "none";
+})
+
+document.getElementById("color2").addEventListener("click",
+function myFunction() {
+    const rootStyle = document.documentElement.style;
+    rootStyle.setProperty('--hue-color', 154);
+    document.getElementById("clchoose").style.display = "none";
+})
+
+document.getElementById("color3").addEventListener("click",
+function myFunction() {
+    const rootStyle = document.documentElement.style;
+    rootStyle.setProperty('--hue-color', 312);
+    document.getElementById("clchoose").style.display = "none";
+})
+
+document.getElementById("color4").addEventListener("click",
+function myFunction() {
+    const rootStyle = document.documentElement.style;
+    rootStyle.setProperty('--hue-color', 45);
+    document.getElementById("clchoose").style.display = "none";
+
+});
+
+document.getElementById("change-color").addEventListener("click", 
+    function myFunction(){
+        var x = document.getElementById('clchoose');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+)
